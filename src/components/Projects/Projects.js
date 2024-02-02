@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import rentroll from "../../Assets/Projects/rentroll.png";
+import chatme from "../../Assets/Projects/ChatMe.png";
+import photobooth from "../../Assets/Projects/PhotoBooth.png";
 
 function Projects() {
   return (
@@ -20,73 +17,271 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+
+        
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={chatme}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Agreenably"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/ChatMe"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rentroll}
+              isBlog={false}
+              title="Rent & Roll"
+              description="Webapp for hourly car bookings with normal, subscription, and admin users. Admin manages cars, subs get 40% off, users book based on availability. Dynamic search bar for easy access. Clone, install dependencies, and run for seamless car renting experience."
+              ghLink="https://github.com/meetgandhii/Rent-Roll"
+              demoLink="https://master--fancy-malabi-9c648b.netlify.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={chatme}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="ChatMe"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/ChatMe"
+              demoLink="https://github.com/meetgandhii/ChatMe"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={photobooth}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="PhotoBooth"
+              description="Implemented a Java-based Image Processing Application using MVC design with Swing for GUI, offering interactive text UI, batch processing, and various image manipulations like color adjustments, flipping, blur, and compression. Utilized Command Callback and Command Design Patterns, adhering to SOLID principles, and employed jUnit for testing."
+              ghLink="https://github.com/meetgandhii/Image-Processing-App-Java"
+              demoLink="https://github.com/meetgandhii/Image-Processing-App-Java"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={chatme}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Kanbas"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/ChatMe"
+              demoLink="https://github.com/meetgandhii/ChatMe"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={chatme}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="One For All"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/ChatMe"
+              demoLink="https://github.com/meetgandhii/ChatMe"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={chatme}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Hotel Booking System"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/ChatMe"
+              demoLink="https://github.com/meetgandhii/ChatMe"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Travel Guide"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/ChatMe"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Ride Along"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/Ride-Along"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Symptom Checker"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/ChatMe"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Loan Eligibility Checker"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Salon Management System"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Dogs vs Cats Checker"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Education Fantasy League"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="P.V.G. Chemicals"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Arline Booking System"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Sareeshadow"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="VirVentures"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Acadzo"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Frescolimited"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="ApexHatchers"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="Medanand"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="RCMHV"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatme}
+              isBlog={false}
+              title="SICA India"
+              description="A User-friendly Chat App that lets users connect with elegance upon registration and logging in. Featuring a classy UI, robust data encryption, and an enjoyable communication style for a delightful chatting experience."
+              ghLink="https://github.com/meetgandhii/GoalDiggers"
+              demoLink="https://github.com/meetgandhii/ChatMe"
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
