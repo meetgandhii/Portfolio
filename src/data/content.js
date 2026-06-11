@@ -99,7 +99,6 @@ export const timeline = [
 ];
 
 const img = (file) => `/assets/projects/${file}`;
-const PLACEHOLDER = null; // projects without a real screenshot get a generated card
 
 // districts: "lab" = The Lab (latest builds), "campus" = Academic Campus,
 // "arcade" = AI & Apps Arcade, "bazaar" = Client Bazaar (freelance)
@@ -111,7 +110,7 @@ export const projects = [
     description:
       "My startup: AI tools for Indian chemical traders. Automates the unglamorous core of the trade — inquiries, quotations, follow-ups and market intelligence — for family-run chemical businesses in Mumbai and beyond.",
     tech: ["AI", "Node.js", "Founder"],
-    img: PLACEHOLDER,
+    img: img("pasken.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -122,7 +121,7 @@ export const projects = [
     description:
       "An AI operating system for Indian boutique hospitality. Ingestion pipelines turn WhatsApp threads, bookings, bank statements, call transcriptions and video into structured, queryable operations data.",
     tech: ["TypeScript", "Node.js", "Supabase", "Anthropic SDK"],
-    img: PLACEHOLDER,
+    img: img("atithi.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -133,7 +132,7 @@ export const projects = [
     description:
       "A desktop companion for Formula 1 race weekends: a floating always-on-top overlay with live timing, session updates and an AI race engineer to ask about strategy, tyres and standings mid-race.",
     tech: ["Electron", "React", "TypeScript", "Express"],
-    img: PLACEHOLDER,
+    img: img("pitwall.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -144,7 +143,7 @@ export const projects = [
     description:
       "Webcam-based hand-gesture control for macOS that replaces the trackpad — cursor, click, scroll, zoom and desktop navigation driven by real-time MediaPipe hand tracking.",
     tech: ["Python", "MediaPipe", "OpenCV"],
-    img: PLACEHOLDER,
+    img: img("gesture-os.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -155,7 +154,7 @@ export const projects = [
     description:
       "A WhatsApp bot that fetches RSS articles, summarizes them with multiple AI providers (Gemini, OpenAI, Groq), and ships a daily digest to mailing lists — with rate limiting and hardened endpoints.",
     tech: ["Node.js", "WhatsApp Web.js", "Gemini", "OpenAI"],
-    img: PLACEHOLDER,
+    img: img("ai-news-bot.png"),
     ghLink: "https://github.com/meetgandhii/AI-News-Bot",
     demoLink: null,
   },
@@ -166,7 +165,7 @@ export const projects = [
     description:
       "A Chrome extension paired with a local Node server that reads a job description on any page and generates a tailored, typeset PDF resume on the spot using Claude and Pandoc.",
     tech: ["Chrome Extension", "Node.js", "Claude", "Pandoc"],
-    img: PLACEHOLDER,
+    img: img("resume-extension.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -177,7 +176,7 @@ export const projects = [
     description:
       "A rental marketplace platform connecting listers, renters and delivery partners — KYC verification, item management and delivery integration across a multi-frontend architecture.",
     tech: ["React", "Node.js", "MongoDB"],
-    img: PLACEHOLDER,
+    img: img("rent-it-out.png"),
     ghLink: "https://github.com/meetgandhii/rent-it-out",
     demoLink: null,
   },
@@ -188,7 +187,7 @@ export const projects = [
     description:
       "A restaurant management system with menu, table and booking APIs — plus a voice-AI layer (VAPI) so customers can book a table by simply calling the restaurant.",
     tech: ["React", "Node.js", "MongoDB", "VAPI"],
-    img: PLACEHOLDER,
+    img: img("restaurant-ai.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -199,7 +198,7 @@ export const projects = [
     description:
       "A full-stack F1-themed scavenger hunt built as a birthday gift: 7 location-based challenges with maps, camera filters, a points system, gift shop and admin panel.",
     tech: ["React", "Node.js", "MongoDB", "Google Maps", "Cloudinary"],
-    img: PLACEHOLDER,
+    img: img("birthday-treasure-hunt.png"),
     ghLink: "https://github.com/meetgandhii/simrans-bday",
     demoLink: null,
   },
@@ -210,7 +209,7 @@ export const projects = [
     description:
       "A real-time full-stack quiz platform built as a birthday gift — live quiz gameplay with sockets, scoring and a custom question set.",
     tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-    img: PLACEHOLDER,
+    img: img("birthday-quiz.png"),
     ghLink: "https://github.com/meetgandhii/harshit-birthday",
     demoLink: null,
   },
@@ -221,7 +220,7 @@ export const projects = [
     description:
       "A personal collection of 8+ Chrome extensions solving daily annoyances: YouTube ad skipper, Amex offers sorter, LinkedIn skills helper, USCIS form autofill, volume booster, co-op game sync and more.",
     tech: ["JavaScript", "Manifest V3", "Chrome APIs"],
-    img: PLACEHOLDER,
+    img: img("chrome-toolbox.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -232,7 +231,7 @@ export const projects = [
     description:
       "Roommate expense automation: Playwright scrapers log into Instacart, Costco Same-Day and Weee, pull order history, and map every line item to the right roommate via card numbers.",
     tech: ["Node.js", "Playwright"],
-    img: PLACEHOLDER,
+    img: img("split.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -353,7 +352,7 @@ export const projects = [
     description:
       "A fully functional Canvas clone offering features like quizzes, modules, user management, and content creation. It integrates backend and frontend seamlessly to provide a smooth user experience for educators and learners.",
     tech: ["React", "Node.js", "MongoDB"],
-    img: PLACEHOLDER,
+    img: img("kanbas.png"),
     ghLink: "https://github.com/meetgandhii/CS5610_Web-Development_NEU/tree/assignment6",
     demoLink: null,
   },
@@ -364,7 +363,7 @@ export const projects = [
     description:
       "A versatile web application enabling English text conversion to Braille or ASL and vice versa. It includes interactive tools for learning sign language and Braille while offering testing features to gauge understanding.",
     tech: ["Web", "Accessibility"],
-    img: PLACEHOLDER,
+    img: img("one-for-all.png"),
     ghLink: "https://github.com/meetgandhii/One-for-All",
     demoLink: null,
   },
@@ -375,7 +374,7 @@ export const projects = [
     description:
       "A comprehensive hotel booking system with admin capabilities to manage hotels and slots. Users can efficiently search and book rooms through an intuitive interface designed for seamless functionality.",
     tech: ["Django", "Python"],
-    img: PLACEHOLDER,
+    img: img("hotel-booking.png"),
     ghLink: "https://github.com/meetgandhii/hotel-booking-system-django",
     demoLink: null,
   },
@@ -386,7 +385,7 @@ export const projects = [
     description:
       "A smart travel recommendation platform that scrapes data from multiple sources, including Wikipedia and tourism websites, to provide users with tailored travel suggestions based on their preferences and filters.",
     tech: ["Python", "Web Scraping"],
-    img: PLACEHOLDER,
+    img: img("travel-guide.png"),
     ghLink: "https://github.com/meetgandhii/Travel-Guide",
     demoLink: null,
   },
@@ -397,7 +396,7 @@ export const projects = [
     description:
       "A carpooling website that connects users based on shared interests, offering a convenient and social way to travel. It features user-friendly tools for matching and managing trips efficiently.",
     tech: ["Web"],
-    img: PLACEHOLDER,
+    img: img("ride-along.png"),
     ghLink: "https://github.com/meetgandhii/Ride-Along",
     demoLink: null,
   },
@@ -408,7 +407,7 @@ export const projects = [
     description:
       "A Java-based application that allows admins to manage barbers and users to book appointments. It generates itemized bills using a file management system for streamlined operations.",
     tech: ["Java"],
-    img: PLACEHOLDER,
+    img: img("salon-management.png"),
     ghLink: "https://github.com/meetgandhii/salon-bill-and-time-management-system",
     demoLink: null,
   },
@@ -419,7 +418,7 @@ export const projects = [
     description:
       "A unique mobile app where students create fantasy leagues by predicting exam questions. It uses string-matching algorithms to reward accurate predictions, motivating collaborative study efforts.",
     tech: ["Mobile", "Algorithms"],
-    img: PLACEHOLDER,
+    img: img("education-fantasy-league.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -430,7 +429,7 @@ export const projects = [
     description:
       "An intuitive medical tool that allows users to select body parts, input symptoms, and receive potential diagnoses and remedies. Powered by advanced medical APIs for accurate health insights.",
     tech: ["Medical APIs"],
-    img: PLACEHOLDER,
+    img: img("symptom-checker.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -441,7 +440,7 @@ export const projects = [
     description:
       "A mobile app that evaluates loan eligibility by analyzing uploaded documents like government IDs, income proofs, and mortgages. Features realistic machine learning models for precise assessments.",
     tech: ["Mobile", "ML"],
-    img: PLACEHOLDER,
+    img: img("loan-eligibility.png"),
     ghLink: "https://github.com/meetgandhii/LoanEligibilityChecker",
     demoLink: null,
   },
@@ -452,7 +451,7 @@ export const projects = [
     description:
       "A machine learning-powered application that classifies images of dogs and cats with high accuracy. Designed for seamless image recognition and reliable performance.",
     tech: ["ML", "Python"],
-    img: PLACEHOLDER,
+    img: img("dogs-vs-cats.png"),
     ghLink: "https://github.com/meetgandhii/dogs-vs-cats-checker",
     demoLink: null,
   },
@@ -463,7 +462,7 @@ export const projects = [
     description:
       "An efficient airline booking system designed to manage flights, bookings, and passenger details. Provides an intuitive interface for seamless reservation management.",
     tech: ["Python"],
-    img: PLACEHOLDER,
+    img: img("airline-booking.png"),
     ghLink: "https://github.com/meetgandhii/Python-Airline-Booking-System",
     demoLink: null,
   },
@@ -474,7 +473,7 @@ export const projects = [
     description:
       "A professional company website showcasing the portfolio, mission, vision, history, and contact details of P.V.G. Chemicals. Built to highlight their expertise in the chemical industry.",
     tech: ["Web", "Freelance"],
-    img: PLACEHOLDER,
+    img: img("pvg-chemicals.png"),
     ghLink: "https://github.com/meetgandhii/pvgchemical",
     demoLink: null,
   },
@@ -485,7 +484,7 @@ export const projects = [
     description:
       "An e-commerce website built on WordPress for Sareeshadow, featuring WooCommerce integration for seamless shopping experiences with secure payment options.",
     tech: ["WordPress", "WooCommerce"],
-    img: PLACEHOLDER,
+    img: img("sareeshadow.png"),
     ghLink: null,
     demoLink: "https://sareeshadow.com/",
   },
@@ -496,7 +495,7 @@ export const projects = [
     description:
       "A large-scale e-commerce platform connecting vendors with customers across various categories such as electronics, beauty products, books, and more. Designed for scalability and efficient order processing.",
     tech: ["E-commerce"],
-    img: PLACEHOLDER,
+    img: img("virventures.png"),
     ghLink: null,
     demoLink: "https://virventures.com/",
   },
@@ -507,7 +506,7 @@ export const projects = [
     description:
       "A dynamic platform aimed at equipping children with essential skills through personalized learning experiences, group activities, and online resources. Built to foster creativity and problem-solving skills.",
     tech: ["EdTech"],
-    img: PLACEHOLDER,
+    img: img("acadzo.png"),
     ghLink: null,
     demoLink: "https://acadzo.com/",
   },
@@ -518,7 +517,7 @@ export const projects = [
     description:
       "A professional website for Fresco Limited, showcasing their expertise in manufacturing cooling radiators, tanks, frames, and industrial products for various sectors. Built to enhance their online presence.",
     tech: ["Web", "Freelance"],
-    img: PLACEHOLDER,
+    img: img("frescolimited.png"),
     ghLink: null,
     demoLink: "https://frescolimited.com/",
   },
@@ -529,9 +528,9 @@ export const projects = [
     description:
       "A consulting firm website offering services in business operations, legal operations, and people operations. It helps businesses expand globally and enter Indian markets with research-driven strategies.",
     tech: ["Web", "Freelance"],
-    img: PLACEHOLDER,
+    img: img("apexhatchers.png"),
     ghLink: null,
-    demoLink: "https://apexhatchers.com/",
+    demoLink: null,
   },
   {
     id: "medanand",
@@ -540,7 +539,7 @@ export const projects = [
     description:
       "An e-commerce medical store web application developed as a freelance project. It streamlines the purchase of medical supplies with an intuitive interface for a seamless shopping experience.",
     tech: ["E-commerce", "Freelance"],
-    img: PLACEHOLDER,
+    img: img("medanand.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -551,7 +550,7 @@ export const projects = [
     description:
       "The official website of the Rotaract Club of Mulund Hill View, showcasing their initiatives and events as the youth wing of Rotary Club of Mulund Hill View. Built to promote community engagement.",
     tech: ["Web", "Community"],
-    img: PLACEHOLDER,
+    img: img("rcmhv.png"),
     ghLink: null,
     demoLink: null,
   },
@@ -562,7 +561,7 @@ export const projects = [
     description:
       "The official website of SICA India, highlighting their expertise in aluminum profiles and conveyor components for factory automation. Designed to showcase their industrial capabilities and services.",
     tech: ["Web", "Freelance"],
-    img: PLACEHOLDER,
+    img: img("sica-india.png"),
     ghLink: null,
     demoLink: "http://www.sica.in/",
   },
