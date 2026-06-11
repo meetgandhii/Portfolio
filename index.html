@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet Gandhi — Software Engineer</title>
+  <meta name="description" content="Meet Gandhi — software engineer & founder. Explore the portfolio as an RPG game, a cinematic site, or a fast one-pager." />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/landing/style.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <main class="select-screen">
+    <p class="kicker">MEET GANDHI PRESENTS</p>
+    <h1 class="title">PORTFOLIO<br />WORLD</h1>
+    <p class="subtitle">software engineer · founder · boston ↔ mumbai</p>
+
+    <p class="select-label" id="select-label">▼ SELECT MODE ▼</p>
+    <nav class="modes" id="modes">
+      <a class="mode" href="/game.html" data-mode="story">
+        <span class="mode-icon">🎮</span>
+        <span class="mode-name">STORY MODE</span>
+        <span class="mode-desc">Walk &amp; shoot through an RPG world. Discover 42 projects, walk Resume Road, find the Resume Chest.</span>
+        <span class="mode-tag" id="story-tag">~3 min · best with keyboard</span>
+      </a>
+      <a class="mode" href="/parallax.html" data-mode="cinematic">
+        <span class="mode-icon">✨</span>
+        <span class="mode-name">CINEMATIC MODE</span>
+        <span class="mode-desc">An animation-heavy scroll experience — comet cursor included.</span>
+        <span class="mode-tag">~90 sec · pretty</span>
+      </a>
+      <a class="mode" href="/basic.html" data-mode="speedrun">
+        <span class="mode-icon">⚡</span>
+        <span class="mode-name">SPEEDRUN MODE</span>
+        <span class="mode-desc">Everything on one fast page: resume, timeline, all projects.</span>
+        <span class="mode-tag">~30 sec · recruiter friendly</span>
+      </a>
+    </nav>
+
+    <p class="hint">↑↓ choose · <kbd>ENTER</kbd> start · or just click</p>
+    <footer class="foot">
+      <a href="https://github.com/meetgandhii" target="_blank" rel="noopener">GITHUB</a> ·
+      <a href="https://www.linkedin.com/in/meetgandhii/" target="_blank" rel="noopener">LINKEDIN</a> ·
+      <a href="/Meet_Resume.pdf" download>RESUME.PDF</a>
+    </footer>
+  </main>
+  <script type="module" src="/src/landing/main.js"></script>
+</body>
+</html>

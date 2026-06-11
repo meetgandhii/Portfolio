@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet Gandhi — Portfolio</title>
+  <meta name="description" content="Meet Gandhi — Software Development Engineer. Cinematic scroll portfolio: full-stack work at Fidelity, AI tools, freelance builds, and more." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="mode-switch" aria-label="Site mode switch">
+    <a href="/" class="mode-switch__link">&#9724; MENU</a>
+    <a href="/game.html" class="mode-switch__link">&#127918; GAME</a>
+    <a href="/parallax.html" class="mode-switch__link is-current" aria-current="page">&#10024; CINEMATIC</a>
+    <a href="/basic.html" class="mode-switch__link">&#9889; BASIC</a>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="hero__layer hero__layer--grid" aria-hidden="true"></div>
+    <div class="hero__layer hero__layer--stars" data-parallax-speed="0.15" aria-hidden="true"></div>
+    <div class="hero__layer hero__layer--glow" data-parallax-speed="0.3" aria-hidden="true"></div>
+    <div class="hero__layer hero__layer--shapes" data-parallax-speed="0.45" aria-hidden="true">
+      <span class="hero__blob hero__blob--blue"></span>
+      <span class="hero__blob hero__blob--indigo"></span>
+      <span class="hero__blob hero__blob--sky"></span>
+    </div>
+    <div class="hero__content" data-parallax-speed="0.7">
+      <p class="hero__kicker">// CINEMATIC MODE</p>
+      <h1 class="hero__name" id="hero-name"></h1>
+      <p class="hero__role" aria-live="polite"><span id="role-text"></span><span class="hero__caret" aria-hidden="true"></span></p>
+      <p class="hero__tagline" id="hero-tagline"></p>
+    </div>
+    <a href="#about" class="hero__scroll-hint" aria-label="Scroll to About section">
+      <span class="hero__scroll-label">SCROLL</span>
+      <span class="hero__scroll-arrow" aria-hidden="true">&#9660;</span>
+    </a>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <p class="section__kicker reveal">// 01 — ABOUT</p>
+      <h2 class="section__title reveal">The story so far</h2>
+      <div id="about-body" class="about__body"></div>
+      <figure class="about__github reveal">
+        <img class="about__chart" src="https://ghchart.rshah.org/41a6f6/meetgandhii" alt="GitHub contributions chart for meetgandhii" loading="lazy" />
+        <figcaption class="about__chart-caption">A year of GitHub contributions</figcaption>
+      </figure>
+    </section>
+
+    <section id="resume" class="section">
+      <p class="section__kicker reveal">// 02 — RESUME ROAD</p>
+      <h2 class="section__title reveal">Where I've shipped</h2>
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"><span id="timeline-fill" class="timeline__fill"></span></div>
+        <ol id="timeline-list" class="timeline__list"></ol>
+      </div>
+      <p class="resume__cta reveal">
+        <a id="resume-download" class="btn btn--primary" download>Download Resume PDF</a>
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section__kicker reveal">// 03 — SKILL TREE</p>
+      <h2 class="section__title reveal">Tools of the trade</h2>
+      <div id="skills-groups" class="skills"></div>
+    </section>
+
+    <section id="achievements" class="section section--narrow">
+      <p class="section__kicker reveal">// 04 — ACHIEVEMENTS</p>
+      <h2 class="section__title reveal">Trophy shelf</h2>
+      <ul id="achievements-list" class="achievements"></ul>
+    </section>
+
+    <section id="projects" class="section section--wide">
+      <p class="section__kicker reveal">// 05 — PROJECT DISTRICTS</p>
+      <h2 class="section__title reveal">Everything I've built</h2>
+      <div id="projects-districts"></div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <p class="section__kicker reveal">// 06 — CONTACT</p>
+    <h2 class="section__title reveal">Let's build something</h2>
+    <div id="contact-details" class="footer__details reveal"></div>
+    <ul id="contact-socials" class="footer__socials reveal"></ul>
+    <p class="footer__sign-off reveal">&#9608;&#9608; Thanks for scrolling. Press START to play instead &rarr; <a href="/game.html">/game.html</a></p>
+  </footer>
+
+  <script type="module" src="/src/parallax/main.js"></script>
+</body>
+</html>

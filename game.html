@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Meet Gandhi — Portfolio World (Game)</title>
+  <meta name="description" content="Explore Meet Gandhi's portfolio as a top-down RPG: walk the map, shoot targets, discover 42 projects, and find the legendary Resume Chest." />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/game/game.css" />
+</head>
+<body>
+  <div id="game-container"></div>
+
+  <div id="hud">
+    <div class="hud-chip" id="hud-name">MEET GANDHI</div>
+    <div class="hud-chip"><span class="lbl">PROJECTS</span> <span class="val" id="hud-projects">0/0</span></div>
+    <div class="hud-chip"><span class="lbl">COINS</span> <span class="val" id="hud-coins">0</span></div>
+    <button class="hud-btn" id="menu-btn" type="button">MENU</button>
+  </div>
+
+  <div id="minimap-frame"></div>
+  <div id="prompt"></div>
+  <div id="toast"></div>
+  <div id="modal-root"></div>
+  <div id="touch-controls"></div>
+
+  <script type="module" src="/src/game/main.js"></script>
+  <script type="module">
+    // MENU button mirrors the M key; wired here to keep main.js scene-focused.
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      window.dispatchEvent(new CustomEvent("mg-open-menu"));
+    });
+  </script>
+</body>
+</html>
