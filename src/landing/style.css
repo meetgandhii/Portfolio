@@ -65,7 +65,21 @@ body::after {
   text-shadow: 4px 4px 0 #15305a, 8px 8px 0 rgba(65, 166, 246, 0.25);
 }
 
-.subtitle { color: var(--muted); margin: 0 0 5vh; }
+.subtitle { color: var(--muted); margin: 0 0 4vh; }
+
+.gate-quote {
+  font-family: var(--pixel);
+  font-size: clamp(13px, 2.4vw, 18px);
+  color: var(--text);
+  margin: 0 0 10px;
+  text-shadow: 2px 2px 0 #15305a;
+}
+.gate-sub {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 3vh;
+}
 
 .select-label {
   font-family: var(--pixel);

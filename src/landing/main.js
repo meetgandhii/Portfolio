@@ -65,14 +65,17 @@ const setupModeSelect = () => {
   );
 };
 
+// On phones, lead with the modes that shine on touch and tag the game honestly.
 const flagTouchDevices = () => {
   const isTouchOnly = window.matchMedia("(pointer: coarse)").matches;
-  if (isTouchOnly) {
-    const tag = document.getElementById("story-tag");
-    tag.textContent = "best on desktop · touch controls included";
-  }
+  if (!isTouchOnly) return;
+  const tag = document.getElementById("story-tag");
+  tag.textContent = "best on desktop · touch controls included";
+  const nav = document.getElementById("modes");
+  const story = nav.querySelector('[data-mode="story"]');
+  nav.appendChild(story); // move STORY MODE last on touch devices
 };
 
 setupStarfield();
-setupModeSelect();
 flagTouchDevices();
+setupModeSelect();
